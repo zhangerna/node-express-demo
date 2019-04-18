@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>B-Labs</title>
+    <meta name="description" content="Free Bootstrap 4 Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+    <!--     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+     -->    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
+
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/logo_new.png">
+    <!-- <link rel="stylesheet" href="assets/css/helpers.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_880717_w1d38xknvs.css">
+    <style>
+        .lg-size {
+            font-size: 14px;
+        }
+        .hide {
+            display: none;
+        }
+        .pb_cover_v1 {
+            background: url("/assets/images/priscilla-du-preez-623040-unsplash.jpg") no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+
+        }
+        /*pawel-nolbert-291146-unsplash.jpg*/
+        .pb_sm_py_cover {
+            height: 482px;
+            background: url("/assets/images/pawel-nolbert-291146-unsplash.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .media {
+            align-items: center;
+        }
+        .email-form {
+            margin: 0 auto;
+        }
+        a:hover,
+        a {
+            text-decoration: none;
+        }
+        /*.form-control {
+          color: #eee;
+        }*/
+        /*.email-btn span,
+        .email-btn {
+          background: #000;
+          color: #fff;
+        }*/
+        .modal-header {
+            border-bottom: none;
+            padding-bottom: 0;
+            padding-top: 10px;
+        }
+        .modal-btn {
+            overflow: hidden;
+            width: 0;
+            height: 0;
+            background: transparent;
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+        button:focus,
+        button{
+            outline:none;
+        }
+        .email-btn {
+            cursor: pointer;
+            background: #1d82ff;
+            line-height: 38px;
+            padding: 0 10px;
+            color: #fff;
+            border-radius: 2px;
+        }
+        .hot-button {
+            background: gainsboro!important;
+        }
+        .pb_navbar .navbar-toggler i,
+        .pb_navbar .navbar-toggler i {
+            font-size: 20px;
+        }
+        #section-serve h3 {
+            font-size: 1.25rem;
+        }
+        .pb_navbar.scrolled.pb_scrolled-light ul li span {
+            color: #868e96;
+        }
+        .navbar-collapse.show .lang {
+            padding-left: 0;
+        }
+        .navbar-collapse .lang {
+            padding-left: 50px;
+            cursor: pointer;
+        }
+        .text-uppercase a {
+            /*color: #adb5bd;*/
+        }
+        .navbar-dark .navbar-nav span.nav-link:focus,
+        .navbar-dark .navbar-nav span.nav-link:hover {
+            color: #868e96;
+        }
+        .logo-img {
+            width: 72px;
+        }
+        .pb_navbar.scrolled.pb_scrolled-light {
+            padding: 8px;
+        }
+        .index-slogan {
+            color: #fff;
+            font-size: 28px;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 5px  #000,-1px -1px 5px #000;
+        }
+        .section-con {
+            text-align: right;
+        }
+        .wechat {
+            width: 116px;
+            position: absolute;
+            bottom: 0px;
+        }
+        .wechat .right {
+            float: right;
+            margin-top: -21px;
+            padding-right: 4px;
+        }
+        .pb_section {
+            padding: 4em 0;
+        }
+        .pr-md-5 {
+            padding-right: 30px;
+        }
+        .pb_contact_details_v1 {
+            font-size: 16px;
+        }
+        #exampleAccordion {
+            font-size: 16px;
+        }
+        .wechat span{
+            font-size: 12px!important;
+        }
+        .images {
+            margin-bottom: 20%;
+        }
+        @media (max-width: 1300px) {
+            .pb_contact_details_v1 {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 768px) {
+            .section-con {
+                text-align: center;
+            }
+            .index-slogan {
+                font-size: 20px;
+            }
+            .navbar a img {
+                width: 100px;
+                margin-left: -20px;
+            }
+            .wechat {
+                position: relative;
+            }
+            .images {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+<nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="pb-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="/"><img src="/assets/images/logo_new.png" alt="" class="logo-img"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="iconfont icon-menu1"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="probootstrap-navbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#section-home"><%= lang.nav.home  %></a></li>
+                <li class="nav-item"><a class="nav-link" href="#section-about"><%= lang.nav.about  %></a></li>
+                <li class="nav-item"><a class="nav-link" href="#section-item"><%= lang.nav.item  %></a></li>
+                <li class="nav-item"><a class="nav-link" href="#section-space"><%= lang.nav.space  %></a></li>
+                <li class="nav-item"><a class="nav-link" href="#section-serve"><%= lang.nav.serve  %></a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="#section-testimonials">最新活动</a></li> -->
+                <!-- <li class="nav-item"><a class="nav-link" href="#section-testimonials">媒体报道</a></li> -->
+
+                <li class="nav-item"><a class="nav-link" href="#section-contact"><%= lang.nav.contact  %></a></li>
+                <li class="nav-item"><a class="nav-link" href="/active"><%= lang.nav.apply  %></a></li>
+                <li class="nav-item lang" id="changeLangBtn"><span class="nav-link"><%= lang.nav.lang  %></span></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- END nav -->
+<!-- 首屏 -->
+<section class="pb_cover_v1 text-left cover-bg-black cover-bg-opacity-4"  id="section-home">
+    <div class="container">
+        <div class="row align-items-center justify-content-end">
+            <div class="col-md-6  order-md-1 section-con">
+
+                <h2 class="heading mb-3"><%= lang.section1.title %></h2>
+                <div class="index-slogan">
+                    <p class="mb-5">
+                        <%= lang.section1.content %>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END section -->
+
+<!-- iLabs简介 -->
+<section class="pb_section pb_section_v1" data-section="about" id="section-about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 pr-md-5 pr-sm-0">
+                <h2 class="mt-0 heading-border-top mb-3 font-weight-normal"><%= lang.section2.title %></h2>
+                <p><%- lang.section2.contents %></p>
+            </div>
+            <div class="col-lg-7">
+                <div class="images">
+                    <img class="img1 img-fluid" src="/assets/images/WechatIMG21153.jpeg" alt="free Template by uicookies.com">
+                    <img class="img2" src="/assets/images/WechatIMG21154.jpeg" alt="free Template by uicookies.com">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- END section -->
+
+<!-- 最强阵容 -->
+<section class="pb_section bg-light" id="section-item">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <div class="media pb_media_v2 d-block text-center mb-3">
+                    <div class="icon border border-gray rounded-circle d-block mr-3 display-4 mx-auto mb-4"><i class="iconfont icon-zibenfuwu"></i></div>
+                    <div class="media-body">
+                        <h3 class="mt-0 pb_font-20"><%= lang.section3.item1.title %></h3>
+                        <p><%= lang.section3.item1.content %></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="media pb_media_v2 d-block text-center  mb-3">
+                    <div class="icon border border-gray rounded-circle d-flex mr-3 display-4 mx-auto mb-4"><i class="iconfont icon-zhiku"></i></div>
+                    <div class="media-body">
+                        <h3 class="mt-0 pb_font-20"><%= lang.section3.item2.title %></h3>
+                        <p><%= lang.section3.item2.content %></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="media pb_media_v2 d-block text-center  mb-3">
+                    <div class="icon border border-gray rounded-circle d-flex mr-3 display-4 mx-auto mb-4"><i class="iconfont icon-meiti"></i></div>
+                    <div class="media-body">
+                        <h3 class="mt-0 pb_font-20"><%= lang.section3.item3.title %></h3>
+                        <p><%= lang.section3.item3.content %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END section -->
+
+
+<!-- 分隔栏 -->
+<section class="pb_sm_py_cover text-center cover-bg-black cover-bg-opacity-4">
+    <div class="container">
+
+        <!-- <div class="row align-items-center">
+          <div class="col-md-12">
+            <h2 class="heading mb-3">Free Consultation</h2>
+            <p class="sub-heading mb-5 pb_color-light-opacity-8">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <p><a href="#section-contact" role="button" class="btn smoothscroll pb_outline-light p-3 rounded-0 pb_font-13 pb_letter-spacing-2">Get Started</a></p>
+          </div>
+        </div> -->
+
+    </div>
+</section>
+<!-- END section -->
+
+<!-- 实体空间 -->
+<section class="pb_section" data-section="why-us" id="section-space">
+    <div class="container">
+        <div class="row justify-content-md-center text-center mb-5">
+            <div class="col-lg-8">
+                <h2 class="mt-0 heading-border-top font-weight-normal"><%= lang.section4.title %></h2>
+                <p><%=  lang.section4.content %></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="images right">
+                    <img class="img1 img-fluid" src="assets/images/WechatIMG21156.jpeg" alt="free Template by uicookies.com">
+                    <!-- <img class="img2" src="assets/images/WechatIMG21158.jpeg" alt="free Template by uicookies.com"> -->
+                </div>
+            </div>
+            <div class="col-lg-5 pl-md-5 pl-sm-0">
+                <div id="exampleAccordion" class="pb_accordion" data-children=".item">
+                    <div class="item">
+                        <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" aria-expanded="true" aria-controls="exampleAccordion1" class="pb_font-18"><%= lang.section4.item1.title %></a>
+                        <div id="exampleAccordion1" class="collapse show" role="tabpanel">
+                            <p><%= lang.section4.item1.content %></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion2" aria-expanded="false" aria-controls="exampleAccordion2" class="pb_font-18"><%= lang.section4.item2.title %></a>
+                        <div id="exampleAccordion2" class="collapse" role="tabpanel">
+                            <p><%= lang.section4.item2.content %></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion3" aria-expanded="false" aria-controls="exampleAccordion3" class="pb_font-18"><%= lang.section4.item3.title %></a>
+                        <div id="exampleAccordion3" class="collapse" role="tabpanel">
+                            <p><%= lang.section4.item3.content %></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion4" aria-expanded="false" aria-controls="exampleAccordion4" class="pb_font-18"><%= lang.section4.item4.title %></a>
+                        <div id="exampleAccordion4" class="collapse" role="tabpanel">
+                            <p>
+                                <%- lang.section4.item4.content %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END section -->
+<!-- 孵化服务 -->
+<section class="pb_section bg-light" id="section-serve">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg">
+
+                <div class="media pb_media_v1 mb-5">
+                    <div class="icon border border-gray rounded-circle d-flex mr-3 display-4 text-primary"><i class="iconfont icon-jishu"></i></div>
+                    <div class="media-body">
+                        <h3 class="mt-0 pb_font-17"><%= lang.section5.title1 %></h3>
+                        <!-- <p class="pb_font-14">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg">
+                <div class="media pb_media_v1 mb-5">
+                    <div class="icon border border-gray rounded-circle d-flex mr-3 display-4 text-primary"><i class="iconfont icon-falv"></i></div>
+                    <div class="media-body">
+                        <h3 class="mt-0 pb_font-17"><%= lang.section5.title2 %></h3>
+                        <!-- <p class="pb_font-14">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="media pb_media_v1 mb-5">
+                    <div class="icon border border-gray rounded-circle d-flex mr-3 display-4 text-primary"><i class="iconfont icon-shequ"></i></div>
+                    <div class="media-body">
+                        <h3 class="mt-0 pb_font-17"><%= lang.section5.title3 %></h3>
+                        <!-- <p class="pb_font-14">It is a paradisematic country, in which roasted parts of sentences fly into your mouth decided to leave for the far World of Grammar.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-lg">
+
+                <div class="media pb_media_v1 mb-5">
+                    <div class="icon border border-gray rounded-circle d-flex mr-3 display-4 text-primary"><i class="iconfont icon-tubiao_fuzhi-"></i></div>
+                    <div class="media-body">
+                        <h3 class="mt-0 pb_font-17"><%= lang.section5.title4 %></h3>
+                        <!-- <p class="pb_font-14">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg">
+                <div class="media pb_media_v1 mb-5">
+                    <div class="icon border border-gray rounded-circle d-flex mr-3 display-4 text-primary"><i class="iconfont icon-quanqiu"></i></div>
+                    <div class="media-body">
+                        <h3 class="mt-0 pb_font-17"><%= lang.section5.title5 %></h3>
+                        <!-- <p class="pb_font-14">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="media pb_media_v1 mb-5">
+
+                    <div class="icon border border-gray rounded-circle d-flex mr-3 display-4 text-primary"><i class="iconfont icon-icon"></i></div>
+                    <div class="media-body">
+                        <h3 class="mt-0 pb_font-17"><%= lang.section5.title6 %></h3>
+                        <!-- <p class="pb_font-14">It is a paradisematic country, in which roasted parts of sentences fly into your mouth decided to leave for the far World of Grammar.</p> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section class="pb_section pb_bg-half hide" data-section="practicing-areas" id="section-practicing-areas">
+    <div class="container">
+        <div class="row justify-content-md-center text-center mb-5">
+            <div class="col-lg-8">
+                <h2 class="mt-0 heading-border-top font-weight-normal">Practicing Areas</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="single-item pb_slide_v2">
+                    <div>
+                        <div class="d-lg-flex d-md-block slide_content">
+                            <div class="pb_content-media" style="background-image: url(assets/images/1900x1200_img_4.jpg);"></div>
+                            <div class="slide_content-text text-center">
+                                <div class="pb_icon_v1"><i class="flaticon text-primary flaticon-handcuffs"></i></div>
+                                <h3 class="font-weight-normal mt-0 mb-4">Criminal Law</h3>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="d-lg-flex d-md-block slide_content">
+                            <div class="pb_content-media" style="background-image: url(assets/images/1900x1200_img_2.jpg);"></div>
+                            <div class="slide_content-text text-center">
+                                <div class="pb_icon_v1"><i class="flaticon text-primary flaticon-wallet"></i></div>
+                                <h3 class="font-weight-normal mt-0 mb-4">Financial Law</h3>
+                                <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+
+                                <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="d-lg-flex d-md-block slide_content">
+                            <div class="pb_content-media" style="background-image: url(assets/images/1900x1200_img_3.jpg);"></div>
+                            <div class="slide_content-text text-center">
+                                <div class="pb_icon_v1"><i class="flaticon text-primary flaticon-computer-security"></i></div>
+                                <h3 class="font-weight-normal mt-0 mb-4">Cyber Crime Law</h3>
+                                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. And if she hasn’t been rewritten, then they are still using her.</p>
+                                <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="d-lg-flex d-md-block slide_content">
+                            <div class="pb_content-media" style="background-image: url(assets/images/1900x1200_img_4.jpg);"></div>
+                            <div class="slide_content-text text-center">
+                                <div class="pb_icon_v1"><i class="flaticon text-primary flaticon-courthouse"></i></div>
+                                <h3 class="font-weight-normal mt-0 mb-4">Real Estate Law</h3>
+                                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. And if she hasn’t been rewritten, then they are still using her. Original article: Web Designer Notebook | Text from Dummy Text Generator</p>
+                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. And if she hasn’t been rewritten, then they are still using her.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="d-lg-flex d-md-block slide_content">
+                            <div class="pb_content-media" style="background-image: url(assets/images/1900x1200_img_4.jpg);"></div>
+                            <div class="slide_content-text text-center">
+                                <div class="pb_icon_v1"><i class="flaticon text-primary flaticon-jury"></i></div>
+                                <h3 class="font-weight-normal mt-0 mb-4">Family Law</h3>
+                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. And if she hasn’t been rewritten, then they are still using her.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END section -->
+
+
+<!-- 活动 -->
+<section class="pb_section hide" >
+    <div class="multiple-items pb_slide_v1">
+        <div>
+            <a href="#" class="link-block">
+                <img src="assets/images/1900x1200_img_4.jpg" alt="" class="img-fluid">
+                <div class="slide-text">
+                    <h2>Criminal Law</h2>
+                    <p>Read More</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="link-block">
+                <img src="assets/images/1900x1200_img_2.jpg" alt="" class="img-fluid">
+                <div class="slide-text">
+                    <h2>Migration Law</h2>
+                    <span>Read More</span>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="link-block">
+                <img src="assets/images/1900x1200_img_3.jpg" alt="" class="img-fluid">
+                <div class="slide-text">
+                    <h2>Civil Rights</h2>
+                    <span>Read More</span>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="link-block">
+                <img src="assets/images/1900x1200_img_4.jpg" alt="" class="img-fluid">
+                <div class="slide-text">
+                    <h2>Property Law</h2>
+                    <span>Read More</span>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="link-block">
+                <img src="assets/images/1900x1200_img_1.jpg" alt="" class="img-fluid">
+                <div class="slide-text">
+                    <h2>Civil Rights</h2>
+                    <span>Read More</span>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="link-block">
+                <img src="assets/images/1900x1200_img_2.jpg" alt="" class="img-fluid">
+                <div class="slide-text">
+                    <h2>State Laws</h2>
+                    <span>Read More</span>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="link-block">
+                <img src="assets/images/1900x1200_img_3.jpg" alt="" class="img-fluid">
+                <div class="slide-text">
+                    <h2>Immigration Laws</h2>
+                    <span>Read More</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</section>
+<!-- END section -->
+
+
+
+
+
+<!-- 媒体 -->
+<section class="pb_section bg-light bg-image with-overlay hide" data-section="attorneys" id="section-attorneys" style="background-image: url(assets/images/1900x1200_img_2.jpg)">
+    <div class="container">
+        <div class="row justify-content-md-center text-center mb-5">
+            <div class="col-lg-8">
+                <h2 class="mt-0 heading-border-top light font-weight-normal text-white">Attorneys</h2>
+                <p class="text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="card text-center pb_card_v1 mb-4">
+                    <img class="card-img-top rounded-circle w-50 mx-auto" src="assets/images/square_img_5.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title mt-0 mb-2">Richard Wilson</h4>
+                        <h6 class="card-subtitle mb-2">Family Lawyer</h6>
+                        <p><a href="#">Read Full Bio</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card text-center pb_card_v1 mb-4">
+                    <img class="card-img-top rounded-circle w-50 mx-auto" src="assets/images/square_img_5.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title mt-0 mb-2">Steve White</h4>
+                        <h6 class="card-subtitle mb-2">Financial Lawyer</h6>
+                        <p><a href="#">Read Full Bio</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card text-center pb_card_v1 mb-4">
+                    <img class="card-img-top rounded-circle w-50 mx-auto" src="assets/images/square_img_5.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title mt-0 mb-2">Ryan David</h4>
+                        <h6 class="card-subtitle mb-2">Business Lawyer</h6>
+                        <p><a href="#">Read Full Bio</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="pb_section pb_testimonial_v1  hide" data-section="testimonials" id="section-testimonials">
+    <div class="container">
+        <div class="row justify-content-md-center text-center mb-5">
+            <div class="col-lg-8">
+                <h2 class="mt-0 heading-border-top font-weight-normal">Happy Customers</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-sm-12 mb-5">
+                <div class="single-item-no-arrow pb_slide_v1">
+                    <div>
+                        <div class="media">
+                            <img class="d-flex img-fluid rounded-circle mb-sm-5" src="assets/images/square_img_5.jpg" alt="Generic placeholder image">
+                            <div class="media-body pl-md-5 pl-sm-0">
+                                <blockquote>
+                                    <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                                    <p class="pb_author"><citeclass="text-uppercase">John Smith</cite> Designer at uicookies.com</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="media">
+                            <img class="d-flex img-fluid rounded-circle mb-sm-5" src="assets/images/square_img_5.jpg" alt="Generic placeholder image">
+                            <div class="media-body pl-md-5 pl-sm-0">
+                                <blockquote>
+                                    <p>&ldquo;A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
+                                    <p class="pb_author"><cite class="text-uppercase">John Smith</cite> Designer at uicookies.com</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- END section -->
+
+
+
+
+<!-- 联系我们 -->
+<section class="pb_section" data-section="contact" id="section-contact">
+    <div class="container">
+
+        <div class="row justify-content-md-center text-center mb-5">
+            <div class="col-lg-7">
+                <h2 class="mt-0 heading-border-top font-weight-normal"><%= lang.section6.title %></h2>
+                <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p> -->
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 pr-md-5 pr-sm-0 mb-4">
+                <img src="/assets/images/brooke-cagle-195777-unsplash.jpg" alt="" class="img-fluid">
+                <!-- <form action="#">
+                  <div class="row">
+                    <div class="col-md">
+                      <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" class="form-control p-3 rounded-0" id="name">
+                      </div>
+                    </div>
+                    <div class="col-md">
+                      <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="text" class="form-control p-3 rounded-0" id="email">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">内容</label>
+                    <textarea cols="30" rows="10" class="form-control p-3 rounded-0" id="message"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" class="btn pb_outline-dark pb_font-13 pb_letter-spacing-2 p-3 rounded-0" value="提交">
+                  </div>
+                </form> -->
+            </div>
+            <div class="col-md-4">
+                <ul class="pb_contact_details_v1">
+                    <li>
+                        <span class="text-uppercase"><%= lang.section6.item1.title %></span>
+                        <%- lang.section6.item1.content %>
+                    </li>
+                    <li>
+                        <span class="text-uppercase"><%= lang.section6.item3.title %></span>
+                        <%= lang.section6.item3.content %>
+                    </li>
+                    <li>
+                        <span class="text-uppercase"><%= lang.section6.item2.title %></span>
+                        <%= lang.section6.item2.content %>
+                    </li>
+                    <li>
+                        <span class="text-uppercase"><%= lang.section6.item4.title %></span>
+                        <%= lang.section6.item4.content %>
+                    </li>
+                    <li>
+                        <div class="wechat">
+                            <img src="/assets/images/wechat.png" height="130px" style="position:relative;margin-left: -12px;">
+                            <%- lang.section6.item5.content %>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END section -->
+
+
+<footer class="pb_footer bg-light" role="contentinfo">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/B_LabsGlobal" class="p-2" target="_blank"><i class="iconfont icon-tuite"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/company/b-labsglobal/" class="p-2" target="_blank"><i class="iconfont icon-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/blabsglobal/" class="p-2" target="_blank"><i class="iconfont icon-Facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://medium.com/@B_LABS" class="p-2" target="_blank"><i class="iconfont icon-medium"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://weibo.com/p/1006067030530080/home?from=page_100606&mod=TAB#place" class="p-2" target="_blank"r><i class="iconfont icon-weibo"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <form action="" class="email-form">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="email" placeholder="<%= lang.footer.emailAddress %>">
+                    <div class="input-group-append email-btn">
+                        <span class="input-group-text " id="emailBtn"><%= lang.footer.emailtBtn %></span>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <p class="pb_font-14">&copy; 2018 <a href="/">B-Labs</a>. All Rights Reserved. Designed by <a href="https://uicookies.com/">uiCookies</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<button type="button" class="btn btn-primary modal-btn" data-toggle="modal" data-target="#myModal">
+    打开模态框
+</button>
+
+<!-- 模态框 -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- 模态框头部 -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- 模态框主体 -->
+            <div class="modal-body text-center">
+                模态框内容..
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- loader -->
+<div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#FDA04F"/></svg></div>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ -->    <script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!--     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ -->    <script src="assets/js/slick.min.js"></script>
+
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<!-- <script src="assets/js/jquery.cookie.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    if(!$.cookie('lang')){
+        var lang =(navigator.browserLanguage?navigator.browserLanguage:navigator.language).toLowerCase();
+        lang = lang ? lang : 'zh';
+        $.cookie('lang', lang);
+        window.location.href ="/"
+    }
+    $(function(){
+        if ($.cookie('lang') == "en") {
+            $("body").addClass("lg-size")
+        }
+    })
+    $("#changeLangBtn").click(function (argument) {
+        $.cookie('lang', $(this).text().toLowerCase());
+        window.location.href ="/?=" + new Date().getTime();
+    })
+    // $("#changeLangBtn").on('click', function(event) {
+    // event.preventDefault();
+    // });
+    var reg = new RegExp("^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$");
+    var tip = "";
+    $("#emailBtn").on('click', function(event) {
+        $(".email-btn").addClass("hot-button");
+        event.preventDefault();
+        var address =  $("#email").val();
+        /* Act on the event */
+        if(reg.test(address) && !sessionStorage.getItem("email")){
+            $.post("/emailApi",{
+                address: address
+            },function(data){
+
+                if(data.code === 200){
+                    sessionStorage.setItem("email", true)
+                    tip = $.cookie('lang') == "zh-cn" ? "订阅成功" : "Subscribe to the success";
+                }else{
+                    tip = $.cookie('lang') == "zh-cn" ? "订阅失败，请重试" : "The subscription failed. Please try again";
+                    $(".email-btn").removeClass("hot-button");
+                }
+                $(".modal-body").text(tip);
+                $(".modal-btn").click();
+            })
+        }else{
+            if (!sessionStorage.getItem("email")) {
+                tip = $.cookie('lang') == "zh-cn" ? "请检查邮箱格式" : "Please check the email format";
+                $(".email-btn").removeClass("hot-button");
+                $(".modal-body").text(tip);
+                $(".modal-btn").click();
+            } else {
+                tip = $.cookie('lang') == "zh-cn" ? "Email subscribed" : "Email subscribed";
+                $(".modal-body").text(tip);
+                $(".modal-btn").click();
+            }
+        }
+    });
+    $('[data-toggle="popover"]').popover();
+</script>
+</body>
+</html>
